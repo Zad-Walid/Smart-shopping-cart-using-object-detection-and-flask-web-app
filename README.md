@@ -22,6 +22,9 @@ YOLO v8 is a significant improvement over previous versions, as it incorporates 
 ## o	Showing final result of home page and webcam page
 ![image](https://github.com/user-attachments/assets/731fef7b-4519-4e71-bbb4-3b7365748e51)
 ![image](https://github.com/user-attachments/assets/31c239b2-4a3d-494a-89f0-e69e40e64244)
+After this step is done the live camera detection waits for 30 seconds until the process of detection is done then redirect to a Qr-code that will be scanned by user and redirect the user to a payment page.
+
+
 
 
 
