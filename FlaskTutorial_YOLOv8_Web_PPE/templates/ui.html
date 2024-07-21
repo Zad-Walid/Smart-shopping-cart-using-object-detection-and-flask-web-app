@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000; /* Set background color to black */
+            .video-container {
+                text-align: center;
+                margin: 0 auto;
+                max-width: 120%; /* Limit container width for responsiveness */
+            }
+            .video-container img {
+                width: 130%; /* Ensure the image takes full width of its container */
+                max-width: 100%;
+                height: auto; /* Maintain aspect ratio */
+                border: 5px solid #ccc;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            }
+            h1 {
+                color: white;
+                margin-bottom: 20px; /* Adjust spacing between text and video */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <h1 style="color: white;">Object Detection</h1>
+        <img src="{{ url_for('video_feed') }}" alt="Video Feed">
+    </div>
+    <script>
+        setTimeout(function() {
+            window.location.href = "{{ url_for('qr_code') }}";
+        }, 30000); // 30 seconds
+    </script>
+</body>
+</html>

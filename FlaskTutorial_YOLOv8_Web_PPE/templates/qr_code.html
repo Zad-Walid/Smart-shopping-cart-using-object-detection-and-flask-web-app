@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan the QR Code</title>
+    <style>
+        body {
+            color: #333;
+            background-color: #000; /* Set background color to black */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 20px; /* Adjust spacing between title and image */
+        }
+        img {
+            width: 75%;
+            max-width: 500px;
+            border-radius: 15px;
+            object-fit: contain;
+            margin-top: 20px; /* Adjust spacing from title */
+        }
+    </style>
+</head>
+<body>
+    <h1>Scan the QR Code using our application to pay</h1>
+    <img src="{{ url_for('static', filename='qr_code.png') }}" alt="QR Code">
+    <script>
+        setTimeout(function() {
+            window.location.href = "{{ url_for('redirect_home') }}";
+        }, 30000); // 30 seconds
+    </script>
+</body>
+</html>
