@@ -10,17 +10,18 @@ The Flask framework serves as the backbone of the application, managing the comm
 ## Part one: Object detection
 While using a dataset consisting of about 5000 images we bulit a YOLOv8 model which is a significant improvement over previous versions, as it incorporates several new features and improvements by Ultralytics,  We were able to detect the products reaching a precision of about 97%.<br />
 In our project we integrated the YOLO model with OpenCV library, this integration demonstrates how YOLO model handles the complex task of object detection, while OpenCV as cv2 facilitates the visualization and graphical representation of the detected objects in the video frames.<br />
-<img src="![db90e740-6a27-45c8-a6a6-063ac2b302fe](https://github.com/user-attachments/assets/75f326aa-b9a0-432a-aae5-91579b3efb7e)"  width="900"/>
+![yolo-comparison-plots](https://github.com/user-attachments/assets/bb56c3fd-8bb5-4180-afc9-0957c996ffc4).<br />
 ## Part two: Deployment using flask framework
 Flask is a lightweight web framework for Python, provides a simple yet powerful environment for serving machine learning models. Model deployment in machine learning integrates a model into an existing production environment, enabling it to process inputs and generate outputs. <br />
 Using flask and HTML , CSS and JavaScript we were able to build an interactive user interface to make the checkout process easier for customers.<br />
 ![ui1](https://github.com/user-attachments/assets/382700f0-d197-46f6-902a-dd8be6fcf99b)
-![5555](https://github.com/user-attachments/assets/7905508f-f669-4343-8bdf-9bb684000a5b)
+![5555](https://github.com/user-attachments/assets/7905508f-f669-4343-8bdf-9bb684000a5b)<br />
 We built two pages which are:<br />
 Instructions page to provide customer with the important instructions related to shopping cart so that the check out process is seamless and successful.<br />
 Live Web Camera page to do the live object detection for the products purchased by the user.<br />
 After this step is done the live camera detection waits for 30 seconds until the process of detection is done then redirect to a Qr-code that fetches the data of the products from database, The Qr-code will be scanned by user using our mobile application and redirect the user to a payment page.<br />
-![photo_2024-08-04_00-05-10](https://github.com/user-attachments/assets/9d2bc18b-eddb-472e-8e5e-9de358c1ee2c)
+![photo_2024-08-04_00-05-10](https://github.com/user-attachments/assets/b9d9258d-8127-43d2-b7d5-363857e4b128)
+
 ## System flow chart:
 ![image](https://github.com/user-attachments/assets/dc59a578-8232-4ef3-afc5-02c719a7d1e6)
 
