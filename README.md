@@ -3,14 +3,14 @@ Unstaffed stores have grown in popularity recently and significantly changed tra
 The core of the Smart Shopping Cart system is an integrated object detection model based on YOLO architecture, which enables real-time identification of products placed in the cart. cameras are used to capture and verify the items, ensuring accurate detection and preventing errors.<br />
 The Flask framework serves as the backbone of the application, managing the communication between the hardware components and the user interface.A responsive frontend interface, developed with HTML, CSS, and JavaScript, provides real-time updates to the user, displaying a Qr code that has item details, total cost, and the available ways of payment.<br />
 ## Requirements:
-*YOLOv8 model<br />
-*OpenCV library<br />
-*Flask framework<br />
-*Web camera<br />
+● YOLOv8 model<br />
+● OpenCV library<br />
+● Flask framework<br />
+● Web camera<br />
 ## Part one: Object detection
 While using a dataset consisting of about 5000 images we bulit a YOLOv8 model which is a significant improvement over previous versions, as it incorporates several new features and improvements by Ultralytics,  We were able to detect the products reaching a precision of about 97%.<br />
 In our project we integrated the YOLO model with OpenCV library, this integration demonstrates how YOLO model handles the complex task of object detection, while OpenCV as cv2 facilitates the visualization and graphical representation of the detected objects in the video frames.<br />
-![db90e740-6a27-45c8-a6a6-063ac2b302fe](https://github.com/user-attachments/assets/75f326aa-b9a0-432a-aae5-91579b3efb7e)<br />
+<img src="![db90e740-6a27-45c8-a6a6-063ac2b302fe](https://github.com/user-attachments/assets/75f326aa-b9a0-432a-aae5-91579b3efb7e)"  width="900"/>
 ## Part two: Deployment using flask framework
 Flask is a lightweight web framework for Python, provides a simple yet powerful environment for serving machine learning models. Model deployment in machine learning integrates a model into an existing production environment, enabling it to process inputs and generate outputs. <br />
 Using flask and HTML , CSS and JavaScript we were able to build an interactive user interface to make the checkout process easier for customers.<br />
